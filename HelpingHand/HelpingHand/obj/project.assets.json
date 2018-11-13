@@ -312,6 +312,40 @@
           "build/Xamarin.Build.Download.targets": {}
         }
       },
+      "Xamarin.Firebase.Auth/60.1142.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Firebase.Common": "[60.1142.1]",
+          "Xamarin.GooglePlayServices.Base": "[60.1142.1]",
+          "Xamarin.GooglePlayServices.Basement": "[60.1142.1]",
+          "Xamarin.GooglePlayServices.Tasks": "[60.1142.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid80/Xamarin.Firebase.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid80/Xamarin.Firebase.Auth.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid80/Xamarin.Firebase.Auth.targets": {}
+        }
+      },
+      "Xamarin.Firebase.Common/60.1142.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.GooglePlayServices.Basement": "[60.1142.1]",
+          "Xamarin.GooglePlayServices.Tasks": "[60.1142.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid80/Xamarin.Firebase.Common.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid80/Xamarin.Firebase.Common.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid80/Xamarin.Firebase.Common.targets": {}
+        }
+      },
       "Xamarin.GooglePlayServices.Base/60.1142.1": {
         "type": "package",
         "dependencies": {
@@ -694,6 +728,30 @@
         "xamarin.build.download.nuspec"
       ]
     },
+    "Xamarin.Firebase.Auth/60.1142.1": {
+      "sha512": "m20DJlQMhhsSk/sw2Nhk6Q3LYbX2a5D5XWa9k3RWSYsavqYmhcxjFgXsdjwbz0h36BonuT1tqMsZcsqpvqm0hg==",
+      "type": "package",
+      "path": "xamarin.firebase.auth/60.1142.1",
+      "files": [
+        ".signature.p7s",
+        "build/MonoAndroid80/Xamarin.Firebase.Auth.targets",
+        "lib/MonoAndroid80/Xamarin.Firebase.Auth.dll",
+        "xamarin.firebase.auth.60.1142.1.nupkg.sha512",
+        "xamarin.firebase.auth.nuspec"
+      ]
+    },
+    "Xamarin.Firebase.Common/60.1142.1": {
+      "sha512": "+7los+L0hzPF71RjTZPg3KXun8L6J+0msF7c2WDvh2YNcTkqtwa63m39O4kDo8oUeb41JEMfqE0Uwq3lDgabng==",
+      "type": "package",
+      "path": "xamarin.firebase.common/60.1142.1",
+      "files": [
+        ".signature.p7s",
+        "build/MonoAndroid80/Xamarin.Firebase.Common.targets",
+        "lib/MonoAndroid80/Xamarin.Firebase.Common.dll",
+        "xamarin.firebase.common.60.1142.1.nupkg.sha512",
+        "xamarin.firebase.common.nuspec"
+      ]
+    },
     "Xamarin.GooglePlayServices.Base/60.1142.1": {
       "sha512": "mEyHPIGA6fqE9AmO8zr3+izgt7rZDuB3OHGrDmU/Mg6cP0z205wXK5z5j4EfI0XZ0kgU0Z33IKbVDgndfFwZeA==",
       "type": "package",
@@ -736,6 +794,8 @@
     "MonoAndroid,Version=v8.1": [
       "Xamarin.Android.Support.Design >= 27.0.2.1",
       "Xamarin.Android.Support.v7.AppCompat >= 27.0.2.1",
+      "Xamarin.Firebase.Auth >= 60.1142.1",
+      "Xamarin.Firebase.Common >= 60.1142.1",
       "Xamarin.GooglePlayServices.Base >= 60.1142.1",
       "sqlite-net-pcl >= 1.5.231"
     ]
@@ -746,11 +806,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Jims Stuff\\Year 4\\Project\\HelpingHand\\HelpingHand\\HelpingHand.csproj",
+      "projectUniqueName": "C:\\Users\\Ana\\Source\\Repos\\4thYearProject\\HelpingHand\\HelpingHand\\HelpingHand.csproj",
       "projectName": "HelpingHand",
-      "projectPath": "F:\\Jims Stuff\\Year 4\\Project\\HelpingHand\\HelpingHand\\HelpingHand.csproj",
+      "projectPath": "C:\\Users\\Ana\\Source\\Repos\\4thYearProject\\HelpingHand\\HelpingHand\\HelpingHand.csproj",
       "packagesPath": "C:\\Users\\Ana\\.nuget\\packages\\",
-      "outputPath": "F:\\Jims Stuff\\Year 4\\Project\\HelpingHand\\HelpingHand\\obj\\",
+      "outputPath": "C:\\Users\\Ana\\Source\\Repos\\4thYearProject\\HelpingHand\\HelpingHand\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -780,6 +840,14 @@
           "Xamarin.Android.Support.v7.AppCompat": {
             "target": "Package",
             "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Firebase.Auth": {
+            "target": "Package",
+            "version": "[60.1142.1, )"
+          },
+          "Xamarin.Firebase.Common": {
+            "target": "Package",
+            "version": "[60.1142.1, )"
           },
           "Xamarin.GooglePlayServices.Base": {
             "target": "Package",

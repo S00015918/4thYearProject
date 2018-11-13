@@ -13,7 +13,7 @@ using System;
 
 namespace HelpingHand
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true, Icon = "@drawable/ic_launcher")]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", Icon = "@drawable/ic_launcher")]
     public class MainActivity : AppCompatActivity
     {
         private EditText input_name, input_email, input_surname, input_phone, input_address, input_city;
